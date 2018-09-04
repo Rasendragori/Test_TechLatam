@@ -1,0 +1,11 @@
+@font-face {
+    font-family: playfair_display;
+    src: url(wp-content/themes/Minimo-RBversion/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+.navbar li a{
+	font-family: playfair_display;
+	color: #8e8e8e;
+}
+.text-black{
+	color: #000;
+}

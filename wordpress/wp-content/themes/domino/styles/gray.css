@@ -1,0 +1,43 @@
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    background-color: #41454c;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+    cursor: pointer;
+    background: #41454c;
+}
+
+
+#header {
+    background: #41454c;
+}
+
+.navbar-nav ul {
+    background: #41454c;
+}
+
+.video-area {
+    background: #41454c;
+}
+
+.video-area .post-item .background-overlay {
+    border-color: #41454c;
+}
+
+.single .post_author {
+    background: #41454c;
+}
+
+.site-info-top {
+    background: #41454c;
+}
+
+.tagline {
+    color: #a7a7a7;
+}

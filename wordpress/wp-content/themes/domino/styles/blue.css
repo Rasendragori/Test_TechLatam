@@ -1,0 +1,151 @@
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    background-color: #2170BE;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+    cursor: pointer;
+    background: #002B45;
+}
+
+
+#header {
+    background: #2170BE;
+}
+
+.navbar-nav ul {
+    background: #002B45;
+}
+
+.navbar-nav ul li:hover {
+    background: #2170BE;
+}
+
+
+.video-area {
+    background: #002B45;
+}
+
+.video-area .post-item .background-overlay {
+    border-color: #002B45;
+}
+
+.widget .tabbernav li a:hover {
+    color: #2170BE;
+}
+
+.sb-search .sb-icon-search:hover {
+    background: #104e8c;
+}
+.sb-search .sb-icon-search {
+    background: #002B45;
+}
+
+.sb-search .sb-search-input {
+    background: #104e8c;
+}
+
+.infinite-scroll #infinite-handle span {
+    background-color: #002B45;
+}
+
+.infinite-scroll #infinite-handle span:hover {
+    background-color: #2170BE;
+}
+
+.single .post_author {
+    background: #002B45;
+}
+
+.site-info-top {
+    background: #002B45;
+}
+
+.site-info-top a:hover {
+    color: #2170BE;
+}
+
+.single .post_author {
+    color: #fff;
+}
+
+.single .post_author a:hover {
+    color: #2170BE;
+}
+
+.site-footer {
+    background: #f6f7f7;
+}
+
+.tagline {
+    color: #bdd4ea;
+}
+
+#news-ticker {
+    background: #002B45;
+}
+
+#news-ticker h3 {
+    color: #fff;
+}
+
+.readmore_button a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:not(.alt):hover, .woocommerce input.button:hover {
+    color: #2170BE;
+}
+
+.recent-posts .cat-links a:hover {
+    color: #2170BE;
+}
+
+.main-navbar .navbar-nav > .current-menu-item > a, .main-navbar .navbar-nav > .current_page_item > a, .main-navbar .navbar-nav > .current-menu-parent > a, .main-navbar .navbar-nav > .current_page_parent > a {
+    background: #002B45;
+}
+
+.navbar-nav > li:hover {
+    background: #002B45;
+}
+
+#navbar-top .navbar-nav a {
+    padding: 9px 15px;
+}
+
+.navbar-nav a:hover {
+    color: #fff;
+}
+
+.navbar-nav > .current-menu-item > a, .navbar-nav > .current_page_item > a, .navbar-nav > .current-menu-parent > a {
+    color: #fff;
+    background: #002B45;
+}
+
+.top-navbar .navbar-nav > li > ul {
+    transform: none;
+    left: 0;
+}
+
+.navbar-brand-wpz a:hover {
+    color: #fff;
+    opacity: .8;
+}
+
+#news-ticker dd a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.entry-content a {
+    color: #222;
+}
+
+a:hover {
+    color: #2170BE;
+}
+
+.entry-content a:hover {
+    color: #2170BE;
+}
