@@ -1,11 +1,50 @@
 @font-face {
-    font-family: playfair_display;
-    src: url(wp-content/themes/Minimo-RBversion/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+    font-family: playfair_display_regular;
+    src: url(Minimo-RBversion/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+@font-face{
+	font-family: playfair_display_bold;
+	src: url(assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf);
+}
+@font-face{
+	font-family: inconsolata_bold;
+	src: url(assets/fonts/Inconsolata/Inconsolata-Bold.ttf);
+}
+@font-face{
+	font-family: inconsolata_regular;
+	src: url(assets/fonts/Inconsolata/Inconsolata-Regular.ttf);
+}
+#nav ul{
+	margin: 0;
+	text-align: center;
+}
+#nav ul > li{
+	display: inline-block;
+	vertical-align: middle;
+}
+#nav ul > li > a{
+	font-family: playfair_display_bold;
+	color: #5e5e5e;
+	font-weight: bold;
+	vertical-align: middle;
+}
+#nav > .row{
+	padding: 0px;
 }
 .navbar li a{
-	font-family: playfair_display;
-	color: #8e8e8e;
+	font-family: playfair_display_bold;
+	color: #5e5e5e;
 }
 .text-black{
 	color: #000;
+}
+.titulotop{
+	font-family: inconsolata_regular;
+	font-size: 30px;
+	letter-spacing: 5px;
+	font-weight: 500;
+}
+.navmenu{
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
