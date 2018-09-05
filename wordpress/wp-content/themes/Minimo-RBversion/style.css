@@ -1,10 +1,18 @@
 @font-face {
     font-family: playfair_display_regular;
-    src: url(Minimo-RBversion/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+    src: url(assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
 }
 @font-face{
 	font-family: playfair_display_bold;
 	src: url(assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf);
+}
+@font-face{
+	font-family: ubuntu_regular;
+	src: url(assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face{
+	font-family: ubuntu_bold;
+	src: url(assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
 }
 @font-face{
 	font-family: inconsolata_bold;
@@ -23,16 +31,15 @@
 	vertical-align: middle;
 }
 #nav ul > li > a{
-	font-family: playfair_display_bold;
+	font-family: playfair_display_regular;
 	color: #5e5e5e;
-	font-weight: bold;
 	vertical-align: middle;
 }
 #nav > .row{
 	padding: 0px;
 }
 .navbar li a{
-	font-family: playfair_display_bold;
+	font-family: playfair_display_regular;
 	color: #5e5e5e;
 }
 .text-black{
@@ -47,4 +54,36 @@
 .navmenu{
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+.cat_principal{
+	font-size: 14px;
+	margin-top: 40px;
+	font-family: ubuntu_regular;
+}
+.cat_principal > a{
+	text-decoration: none;
+	color: #c6c6c6;
+}
+.titulo_principal{
+	margin-top: 15px;
+	font-family: playfair_display_regular;
+}
+.titulo_principal > h3{
+	font-size: 35px;
+	color: #5e5e5e;
+}
+.excerpt_principal{
+	margin-top: 20px;
+	font-family: playfair_display_regular;
+	font-size: 16px;
+	color: #5e5e5e;
+}
+.comentarios_principal{
+	font-size: 14px;
+	margin-top: 30px;
+	font-family: ubuntu_regular;
+}
+.comentarios_principal > a{
+	text-decoration: none;
+	color: #c6c6c6;
 }
