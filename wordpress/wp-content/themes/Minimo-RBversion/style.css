@@ -171,6 +171,17 @@
 }
 footer{
 	background-color: #F0F0F0;
-	height: 100px;
+	min-height: 100px;
 	margin-top: 130px;
+}
+.footer_div > a{
+	text-decoration: none;
+}
+.footer_a{
+	font-family: playfair_display_regular;
+	color: #000;
+	margin-right: 20px;
+}
+footer > .container{
+	padding: 43px;
 }
