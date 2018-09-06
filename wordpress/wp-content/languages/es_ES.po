@@ -12321,7 +12321,7 @@ msgstr "Pingback"
 
 #: wp-includes/comment-template.php:1597 wp-includes/script-loader.php:653
 msgid "Reply"
-msgstr "Responder"
+msgstr "Reply"
 
 #: wp-includes/class-wp-customize-manager.php:4622
 #: wp-includes/script-loader.php:551 wp-includes/script-loader.php:705

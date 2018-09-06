@@ -6,8 +6,8 @@
 					<a href="<?php the_permalink( $post = 57 ); ?>" class="footer_a">Privacy</a>
 				</div>
 				<div class="col-sm-3 row" style="text-align: center;">
-					<p class="col-sm-4" style="font-family: playfair_display_regular;">Follow</p>
-					<div class="col-sm-8">
+					<p class="col-lg-4" style="font-family: playfair_display_regular;">Follow</p>
+					<div class="col-lg-8">
 						<a href="#" class="footer_a">
 							<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/facebook-dark.png">
 						</a>

@@ -6,7 +6,7 @@
 			<div id="seccion_principal" class="portada row justify-content-center">
 				<!-- post -->
 				<section class="col-12 row justify-content-center">
-					<a href="<?php the_permalink(); ?>" class="image featured col-12 imagen_responsive">
+					<a href="<?php the_permalink(); ?>" class="image featured col-12 imagen_responsive" style="margin-bottom: 90px;">
 						<?php
 							// check if the post has a Post Thumbnail assigned to it.
 						if ( has_post_thumbnail() ) {
@@ -14,41 +14,48 @@
 						}
 						?>
 					</a>
-					<?php $category = get_the_category();
-						if ( $category[0] ) {
-							echo '<h2 class="cat_principal col-11"><a href="' . get_category_link( $category[0]->term_id ) . '">' . $category[0]->cat_name . '</a></h2>';
-						}
-					?>
-					<header class="col-11 titulo_principal">
-						<a href="<?php the_permalink(); ?>">
-							<h3><?php the_title(); ?></h3>
-						</a>
-					</header>
-					<div class="contenido_principal col-11">
-						<?php the_content(); ?>
+					<div class="col-md-9 row">
+						<?php $category = get_the_category();
+							if ( $category[0] ) {
+								echo '<h2 class="cat_principal col-11" style="margin-top: 0px;"><a href="' . get_category_link( $category[0]->term_id ) . '">' . $category[0]->cat_name . '</a></h2>';
+							}
+						?>
+						<header class="col-11 titulo_principal">
+							<a href="<?php the_permalink(); ?>">
+								<h3><?php the_title(); ?></h3>
+							</a>
+						</header>
+						<div class="contenido_principal col-11">
+							<?php the_content(); ?>
+						</div>
+						<footer class="col-11 comentarios_principal row" style="background-color: transparent; text-align: right; margin-bottom: 30px;">
+							<div class="col-lg-8" style="text-align: right;">
+								<p style="font-family: ubuntu_regular; color: #C6C6C6; font-size: 16px;">SHARE</p>
+							</div>
+							<div class="col-lg-4">
+								<a href="#" class="footer_a">
+									<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/facebook-light.png">
+								</a>
+								<a href="#" class="footer_a">
+									<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/twittew-light.png">
+								</a>
+								<a href="#" class="footer_a">
+									<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/g.png">
+								</a>
+								<a href="#" class="footer_a">
+									<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/tumbler.png">
+								</a>
+								<a href="#" class="footer_a">
+									<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/pinterest.png">
+								</a>
+							</div>
+						</footer>
 					</div>
-					<footer class="col-11 comentarios_principal row" style="background-color: transparent; text-align: right; margin-bottom: 30px;">
-						<div class="col-lg-9" style="text-align: right;">
-							<p style="font-family: ubuntu_regular; color: #C6C6C6; font-size: 16px;">SHARE</p>
-						</div>
-						<div class="col-lg-3">
-							<a href="#" class="footer_a">
-								<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/facebook-light.png">
-							</a>
-							<a href="#" class="footer_a">
-								<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/twittew-light.png">
-							</a>
-							<a href="#" class="footer_a">
-								<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/g.png">
-							</a>
-							<a href="#" class="footer_a">
-								<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/tumbler.png">
-							</a>
-							<a href="#" class="footer_a">
-								<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/pinterest.png">
-							</a>
-						</div>
-					</footer>
+					<div class="col-md-3">
+						<?php
+							dynamic_sidebar( 'Post Sidebar' );
+						?>
+					</div>
 				</section>
 			</div>
 		</div>

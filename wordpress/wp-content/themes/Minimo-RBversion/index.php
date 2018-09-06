@@ -141,7 +141,7 @@
 		<!-- Widget area para suscricción al newsletter -->
 	<div class="widget">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center widget_newsletter_prncipal">
 				<?php
 					dynamic_sidebar( 'Index Widgets Area' );
 				?>

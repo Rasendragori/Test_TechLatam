@@ -13,9 +13,9 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row navmenu">
+		<div class="row navmenu d-flex align-items-center">
 			<div class="col-xl-5 titulotop">
-				MINIM­Ø
+				<a href="<?php echo get_home_url(); ?>"><h1>MINIM­Ø</h1></a>
 			</div>
 			<div class="col-xl-7">
 				<?php
