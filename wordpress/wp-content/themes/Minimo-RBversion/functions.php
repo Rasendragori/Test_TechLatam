@@ -22,4 +22,39 @@
 		'principal' => 'Menú Principal',
 	));
 
+	//Soporte para Sidebar
+	if (function_exists('register_sidebar')) {
+		# code...
+		/**
+		 * Creates a sidebar
+		 * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
+		 */
+		$args_sidebar = array(
+			'name'          => __( 'Post Sidebar', 'text-domain' ),
+			'id'            => 'unique-sidebar-id-post',
+			'description'   => 'Sidebar en los posts',
+			'class'         => '',
+			'before_widget' => '<li id="%1" class="widget post_widgets">',
+			'after_widget'  => '</li>',
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => '</h2>',
+		);
+		
+		register_sidebar( $args_sidebar );
+
+		$args_index_widgets = array(
+			'name'          => __( 'Index Widgets Area', 'text-domain' ),
+			'id'            => 'unique-sidebar-id-index-area',
+			'description'   => 'Area de widgets en el index',
+			'class'         => '',
+			'before_widget' => '<li id="%1" class="widget index_widgets">',
+			'after_widget'  => '</li>',
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => '</h2>',
+		);
+		
+		register_sidebar( $args_sidebar );
+		
+	}
+
 ?>

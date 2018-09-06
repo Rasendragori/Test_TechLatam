@@ -57,8 +57,9 @@
 }
 .cat_principal{
 	font-size: 14px;
-	margin-top: 40px;
+	margin-top: 90px;
 	font-family: ubuntu_regular;
+	padding: 0;
 }
 .cat_principal > a{
 	text-decoration: none;
@@ -67,23 +68,54 @@
 .titulo_principal{
 	margin-top: 15px;
 	font-family: playfair_display_regular;
+	padding: 0;
 }
-.titulo_principal > h3{
+.titulo_principal > a{
 	font-size: 35px;
 	color: #5e5e5e;
+	padding: 0;
+	text-decoration: none;
 }
 .excerpt_principal{
 	margin-top: 20px;
 	font-family: playfair_display_regular;
-	font-size: 16px;
+	font-size: 14px;
 	color: #5e5e5e;
+	padding: 0;
 }
 .comentarios_principal{
 	font-size: 14px;
 	margin-top: 30px;
 	font-family: ubuntu_regular;
+	padding: 0;
 }
 .comentarios_principal > a{
 	text-decoration: none;
 	color: #c6c6c6;
+}
+.cat_secundaria{
+	font-size: 14px;
+	margin-top: 40px;
+	font-family: ubuntu_regular;
+	padding: 0;
+}
+.cat_secundaria > a{
+	text-decoration: none;
+	color: #c6c6c6;
+}
+.imagen_responsive > img{
+	width:100%;
+	height:auto;
+}
+.imagen_responsive{
+	padding: 0;
+}
+.lifestyle_1{
+	margin-top: 130px;
+}
+.photodiary_1{
+	margin-top: 130px;
+}
+.portada > section{
+	padding: 0;
 }
