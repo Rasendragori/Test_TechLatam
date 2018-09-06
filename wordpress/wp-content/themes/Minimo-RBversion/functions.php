@@ -12,6 +12,8 @@
 	function misrecursos() {
 		//wp_enqueue_script( '$handle', '$src', array( 'jquery' ), false, false );
 		wp_enqueue_style( "style", get_stylesheet_uri());
+		wp_enqueue_script( "main", get_template_directory_uri() . '/assets/js/main.js', array(), 1.1, false );
+		wp_enqueue_style( "cssicons", get_template_directory_uri() . '/assets/css/cssicons.css',false,'1.1','all');
 	}
 	add_action( 'wp_enqueue_scripts', 'misrecursos' );
 	

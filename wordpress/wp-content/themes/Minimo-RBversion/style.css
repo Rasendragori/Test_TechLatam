@@ -83,6 +83,16 @@
 	color: #5e5e5e;
 	padding: 0;
 }
+.contenido_principal{
+	margin-top: 20px;
+	font-family: playfair_display_regular;
+	font-size: 14px;
+	color: #5e5e5e;
+	padding: 0;
+}
+.contenido_principal > img{
+	margin: 0;
+}
 .comentarios_principal{
 	font-size: 14px;
 	margin-top: 30px;
@@ -109,6 +119,18 @@
 }
 .imagen_responsive{
 	padding: 0;
+}
+.imagen_responsive > figure{
+	padding-top: 50px;
+	width:100%;
+	height:auto;
+}
+.imagen_responsive > figure > figcaption{
+	padding-bottom: 50px;
+}
+.imagen_responsive > figure > img{
+	width:100%;
+	height:auto;
 }
 .lifestyle_1{
 	margin-top: 130px;
@@ -165,7 +187,7 @@
 	margin: auto;
 	vertical-align: middle;
 }
-.cargar_mas > div > p{
+.cargar_mas > div > a > p{
 	margin-top: 13px;
 	color: #5e5e5e;
 }
@@ -184,4 +206,7 @@ footer{
 }
 footer > .container{
 	padding: 43px;
+}
+.contenido_principal > p{
+	padding-top: 15px;
 }

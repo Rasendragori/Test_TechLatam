@@ -9,13 +9,13 @@
 					<p class="col-sm-4" style="font-family: playfair_display_regular;">Follow</p>
 					<div class="col-sm-8">
 						<a href="#" class="footer_a">
-							<img src="wp-content/themes/Minimo-RBversion/assets/images/facebook-dark.png">
+							<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/facebook-dark.png">
 						</a>
 						<a href="#" class="footer_a">
-							<img src="wp-content/themes/Minimo-RBversion/assets/images/twitter-dark.png">
+							<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/twitter-dark.png">
 						</a>
 						<a href="#" class="footer_a">
-							<img src="wp-content/themes/Minimo-RBversion/assets/images/instagram.png">
+							<img src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/instagram.png">
 						</a>
 					</div>
 				</div>

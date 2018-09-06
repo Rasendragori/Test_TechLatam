@@ -48,7 +48,7 @@ class NewsletterWidgetMinimal extends WP_Widget {
 
         $form .= '<input class="tnp-email col-10" type="email" required name="ne" value="" placeholder="Enter a valid email address">';
 
-        $form .= '<input class="tnp-submit col-2" type="image" src="wp-content/themes/Minimo-RBversion/assets/images/paper-plane.png" style="background-color: transparent;">';
+        $form .= '<input class="tnp-submit col-2" type="image" src="http://localhost/TechLatam_Test/wordpress/wp-content/uploads/2018/09/paper-plane.png" style="background-color: transparent;">';
 
         $form .= '</form></div>';
 

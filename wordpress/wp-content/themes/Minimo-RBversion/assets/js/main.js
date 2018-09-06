@@ -1,8 +1,6 @@
-
-jQuery(document).ready(function($){
-	window.onload = function () {
-		// body...
-		$('.menu').addClass('row');
-		$('.menu-item').addClass('col-sm-3');
-	}
-});
+$(document).ready( function() {
+  $('.menu').addClass( ' row' );
+} );
+$(document).ready( function() {
+  $('.menu-item').addClass( ' col-sm-3' );
+} );

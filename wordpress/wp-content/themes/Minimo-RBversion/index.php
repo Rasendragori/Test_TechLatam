@@ -196,7 +196,13 @@
 	</div>
 	<div class="container cargar_mas">
 		<div>
-			<p>Load more</p>
+			<?php
+				$category_id = get_cat_ID( 'LIFESTYLE' );
+				$category_link = get_category_link( $category_id );
+			?>
+			<a href="<?php echo esc_url( $category_link ); ?>" style="text-decoration: none;">
+				<p>Load more</p>			
+			</a>
 		</div>
 	</div>
 
