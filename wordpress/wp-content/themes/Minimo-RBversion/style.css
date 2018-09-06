@@ -116,6 +116,61 @@
 .photodiary_1{
 	margin-top: 130px;
 }
+.lifestyle_2{
+	margin-top: 130px;
+}
 .portada > section{
 	padding: 0;
+}
+.widget{
+	background-color: #F0F0F0;
+	margin-top: 130px;
+	height: 300px;
+}
+.widget > .container{
+	height: 300px;
+}
+.widget > .container > .row{
+	height: 300px;
+}
+.index_widgets{
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+}
+.widgettitle{
+	font-family: playfair_display_regular;
+}
+.tnp-widget-minimal{
+	max-width: 420px;
+	margin: auto;
+}
+.newsletter_minimal_widget{
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	border-bottom-width: 1px;
+}
+.cargar_mas{
+	text-align: center;
+	margin-top: 130px;
+}
+.cargar_mas > div{
+	border-style: solid;
+	border-color: #5e5e5e;
+	border-width: 1px;
+	font-family: playfair_display_regular;
+	font-size: 20px;
+	height: 60px;
+	width: 150px;
+	margin: auto;
+	vertical-align: middle;
+}
+.cargar_mas > div > p{
+	margin-top: 13px;
+	color: #5e5e5e;
+}
+footer{
+	background-color: #F0F0F0;
+	height: 100px;
+	margin-top: 130px;
 }

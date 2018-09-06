@@ -34,7 +34,7 @@
 			'id'            => 'unique-sidebar-id-post',
 			'description'   => 'Sidebar en los posts',
 			'class'         => '',
-			'before_widget' => '<li id="%1" class="widget post_widgets">',
+			'before_widget' => '<li class="post_widgets">',
 			'after_widget'  => '</li>',
 			'before_title'  => '<h2 class="widgettitle">',
 			'after_title'   => '</h2>',
@@ -47,13 +47,13 @@
 			'id'            => 'unique-sidebar-id-index-area',
 			'description'   => 'Area de widgets en el index',
 			'class'         => '',
-			'before_widget' => '<li id="%1" class="widget index_widgets">',
+			'before_widget' => '<li class="index_widgets col-sm-6">',
 			'after_widget'  => '</li>',
 			'before_title'  => '<h2 class="widgettitle">',
 			'after_title'   => '</h2>',
 		);
 		
-		register_sidebar( $args_sidebar );
+		register_sidebar( $args_index_widgets );
 		
 	}
 

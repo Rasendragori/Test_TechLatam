@@ -135,11 +135,66 @@
 				<h2 class="entry-title"> <?php esc_html_e( 'No Posts Found.', 'edge' ); ?> </h2>
 				<?php }?>
 		</div>
+	</div>
 		<!-- Widget area para suscricción al newsletter -->
-		<div class="widget">
+	<div class="widget">
+		<div class="container">
+			<div class="row justify-content-center">
+				<?php
+					dynamic_sidebar( 'Index Widgets Area' );
+				?>
+			</div>
+		</div>
+	</div>
+	<div class="container lifestyle_2">
+		<div class="row  justify-content-center">
 			<?php
-				dynamic_sidebar( 'Index Widgets Area' )
+				$argslifestyle = array(
+					'tag_id' => 9,
+					'posts_per_page' => 2
+				);
+
+				$querylifestyle = new WP_Query( $argslifestyle );
+				if( $querylifestyle->have_posts() ) {
+					while( $querylifestyle->have_posts() ) {
+						$querylifestyle->the_post();
 			?>
+						<div id="seccion_principal" class="col-sm-6 row">
+							<!-- post -->
+							<section class="col-12 row justify-content-center">
+								<a href="<?php the_permalink(); ?>" class="image featured col-12 imagen_responsive">
+									<?php
+										// check if the post has a Post Thumbnail assigned to it.
+									if ( has_post_thumbnail() ) {
+										the_post_thumbnail('category-thumb');
+									}
+									?>
+								</a>
+								<?php $category = get_the_category();
+									if ( $category[0] ) {
+										echo '<h2 class="cat_secundaria col-12"><a href="' . get_category_link( $category[0]->term_id ) . '">' . $category[0]->cat_name . '</a></h2>';
+									}
+								?>
+								<header class="col-12 titulo_principal">
+									<a href="<?php the_permalink(); ?>">
+										<h3><?php the_title(); ?></h3>
+									</a>
+								</header>
+								<div class="col-12 excerpt_principal">
+									<?php the_excerpt(); ?>
+								</div>
+							</section>
+						</div>
+					<?php } ?>
+				<?php }
+				else { ?>
+				<h2 class="entry-title"> <?php esc_html_e( 'No Posts Found.', 'edge' ); ?> </h2>
+				<?php }?>
+		</div>
+	</div>
+	<div class="container cargar_mas">
+		<div>
+			<p>Load more</p>
 		</div>
 	</div>
 

@@ -36,8 +36,8 @@ class NewsletterWidgetMinimal extends WP_Widget {
         $options_profile = NewsletterSubscription::instance()->get_options('profile', $current_language);
 
 
-        $form = '<div class="tnp tnp-widget-minimal">';
-        $form .= '<form class="tnp-form" action="' . $newsletter->build_action_url('s') . '" method="post" onsubmit="return newsletter_check(this)">';
+        $form = '<div class="tnp tnp-widget-minimal container">';
+        $form .= '<form class="tnp-form row" style="border-bottom-style: solid; border-bottom-color: #000; border-bottom-width: 1px; font-family: playfair_display_regular; margin-top: 50px;" action="' . $newsletter->build_action_url('s') . '" method="post" onsubmit="return newsletter_check(this)">';
         if (isset($instance['nl']) && is_array($instance['nl'])) {
             foreach ($instance['nl'] as $a) {
                 $form .= "<input type='hidden' name='nl[]' value='" . ((int) trim($a)) . "'>\n";
@@ -46,9 +46,9 @@ class NewsletterWidgetMinimal extends WP_Widget {
         // Referrer
         $form .= '<input type="hidden" name="nr" value="widget-minimal"/>';
 
-        $form .= '<input class="tnp-email" type="email" required name="ne" value="" placeholder="' . esc_attr($options_profile['email']) . '">';
+        $form .= '<input class="tnp-email col-10" type="email" required name="ne" value="" placeholder="Enter a valid email address">';
 
-        $form .= '<input class="tnp-submit" type="submit" value="' . esc_attr($instance['button']) . '">';
+        $form .= '<input class="tnp-submit col-2" type="image" src="wp-content/themes/Minimo-RBversion/assets/images/paper-plane.png" style="background-color: transparent;">';
 
         $form .= '</form></div>';
 
